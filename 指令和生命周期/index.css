@@ -1,0 +1,7 @@
+
+.tt{
+  color: #12345678;
+  font-size: 50px;
+  transition: all 0.5s;
+  user-select: none;
+}
