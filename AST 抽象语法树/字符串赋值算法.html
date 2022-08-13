@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<h1>算法</h1>
+		<script>
+		    let str = 'tt<div>ooiii'
+			for(let i = 0; i < str.length ; i++) {
+				let tem = str.substring(i)
+				console.log(tem.match(/^([^\<]+)(\>)/))
+			}
+			// let msg = '2[3[a]2[3[u]2[p]]]'
+			// console.log(msg)
+			// function handleStr(str) {
+			// 	let stack1 = [] // 存放数字
+			// 	let stack2 = [''] // 存放字母
+			// 	let index = 0
+			// 	while(index < str.length) {
+			// 		// console.log(stack2)
+			// 		let nowStr = str.substring(index)
+			// 		if(/^\d+\[/.test(nowStr)){
+			// 		   let num =  nowStr.match(/^(\d+)\[/)[1]
+			// 		   index += num.length + 1
+			// 		   stack1.push(Number(num))
+			// 		   stack2.push('')
+			// 		} else if(/^\w+\]/.test(nowStr)){
+			// 			let word = nowStr.match(/^(\w+)\]/)[1]
+			// 			index += word.length 
+			// 			console.log(stack2, stack2.length - 1)
+			// 			stack2[stack2.length - 1] = word
+			// 		} else if(nowStr[0] == ']'){
+			// 			let num = stack1.pop()
+			// 			let subStr = stack2.pop() 
+			// 			stack2[stack2.length - 1] += subStr.repeat(num)
+			// 			index++
+			// 		}
+					 
+			// 	}
+			// 	console.log(stack2, stack1)
+			// 	return stack2[0]
+			// }
+			// handleStr(msg)
+		</script>
+	</body>
+</html>
